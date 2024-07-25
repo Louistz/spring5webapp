@@ -26,6 +26,11 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.14</version>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
@@ -63,24 +68,29 @@
 		</plugins>
 	</build>
 
-	<repositories>
-		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
+<!--	<repositories>-->
+<!--		<repository>-->
+<!--			<id>ali-repo</id>-->
+<!--			<name>ali maven repo</name>-->
+<!--			<url>https://maven.aliyun.com/repository/public</url>-->
+<!--		</repository>-->
+<!--		<repository>-->
+<!--			<id>spring-snapshots</id>-->
+<!--			<name>Spring Snapshots</name>-->
+<!--			<url>https://repo.spring.io/snapshot</url>-->
+<!--			<snapshots>-->
+<!--				<enabled>true</enabled>-->
+<!--			</snapshots>-->
+<!--		</repository>-->
+<!--		<repository>-->
+<!--			<id>spring-milestones</id>-->
+<!--			<name>Spring Milestones</name>-->
+<!--			<url>https://repo.spring.io/milestone</url>-->
+<!--			<snapshots>-->
+<!--				<enabled>false</enabled>-->
+<!--			</snapshots>-->
+<!--		</repository>-->
+<!--	</repositories>-->
 
 	<pluginRepositories>
 		<pluginRepository>
